@@ -1,0 +1,22 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #sideNav{
+    width: 20%;
+  }
+  
+  .iconCustom{
+    font-size: 200%;
+    color: #22A39F;
+  }
+  
+  .menuItemCustom{
+    color: white;
+      background: #22A39F;
+      border-radius: 0px 25px 25px 0px;
+  }

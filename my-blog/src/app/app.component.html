@@ -1,0 +1,51 @@
+<mat-sidenav-container 
+    class="example-container" (backdropClick)="close('big close')" >
+  <mat-sidenav id="sideNav" #sidenav (keydown.escape)="close('escape')" > 
+    
+    <mat-list>
+      <mat-list-item [routerLink]="['/landingpage']">
+        <mat-icon class="iconCustom">home</mat-icon> &nbsp; &nbsp;<label><b >
+          Landing Page</b></label>                             
+      </mat-list-item> 
+      <mat-divider></mat-divider>     
+      <mat-list-item>
+        <mat-icon class="iconCustom">home</mat-icon> &nbsp; &nbsp;<label><b>Home2</b></label>                             
+      </mat-list-item> 
+      <mat-divider></mat-divider>
+      <mat-list-item class="menuItemCustom">
+        <mat-icon class="iconCustom">home</mat-icon> &nbsp; &nbsp;<label><b>Home</b></label>                             
+      </mat-list-item> 
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon class="iconCustom">home</mat-icon> &nbsp; &nbsp;<label><b>Home</b></label>                            
+      </mat-list-item> 
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon class="iconCustom">home</mat-icon> &nbsp; &nbsp;<label><b>Home</b></label>                             
+      </mat-list-item> 
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon class="iconCustom">home</mat-icon> &nbsp; &nbsp;<label><b>Home</b></label>                            
+      </mat-list-item> 
+      <mat-divider></mat-divider>
+    </mat-list>
+
+    
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon (click)="sidenav.open()" >menu</mat-icon>
+      </button>
+      <span (click)="sidenav.open()" >My App</span>
+      <span class="example-spacer"></span>
+    </mat-toolbar>
+    
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
